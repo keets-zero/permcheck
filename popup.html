@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">◈</span>
+      <span class="brand-name">PermCheck</span>
+    </div>
+    <span class="brand-sub">EXTENSION AUDITOR</span>
+  </header>
+
+  <section class="verdict-panel">
+    <div id="headline" class="headline">Reading your extensions…</div>
+    <div class="annunciators">
+      <div class="ann ann-red">
+        <span id="count-red" class="ann-num">–</span>
+        <span class="ann-label">HIGH ACCESS</span>
+      </div>
+      <div class="ann ann-amber">
+        <span id="count-amber" class="ann-num">–</span>
+        <span class="ann-label">SOME</span>
+      </div>
+      <div class="ann ann-green">
+        <span id="count-green" class="ann-num">–</span>
+        <span class="ann-label">LOW ACCESS</span>
+      </div>
+    </div>
+    <div class="actions">
+      <button id="copy-btn" class="action-btn" type="button">Copy report</button>
+    </div>
+  </section>
+
+  <div id="changes" class="changes"></div>
+
+  <div id="status" class="status">Reading…</div>
+  <main id="list" class="list"></main>
+
+  <footer class="foot">
+    <div class="foot-line">
+      <span class="dot"></span>PermCheck only reads. No network calls. No data leaves your computer.
+    </div>
+    <div class="foot-note">
+      The verdict shows access level, not that an extension is malicious — high access can be entirely legitimate, but it requires trusting the developer. PermCheck itself uses the <code>management</code> permission to read this list.
+    </div>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "PermCheck",
+  "version": "0.7.1",
+  "description": "Audits what permissions your installed extensions have and explains what it means, in plain English. Only reads, sends nothing.",
+  "permissions": [
+    "management",
+    "storage"
+  ],
+  "host_permissions": [],
+  "action": {
+    "default_title": "PermCheck — audit your extensions",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
